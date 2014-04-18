@@ -29,7 +29,7 @@
         [self addSubview:_bubbleContainer];
         
         //Add user image
-        _userImageView = [[UIImageView alloc] initWithFrame:CGRectMake(5, 15, 36, 36)];
+        _userImageView = [[UIImageView alloc] initWithFrame:CGRectMake(5, 5, 36, 36)];
         _userImageView.image = [UIImage imageNamed:@"user_placeholder"];
         _userImageView.backgroundColor = [UIColor lightGrayColor];
         _userImageView.layer.cornerRadius = 18;
@@ -75,16 +75,15 @@
 }
 
 -(void)layoutSubviews{
-    _bubbleHeight -= 10;
     _bubbleWidth = (_bubbleWidth > 310) ? 310 : _bubbleWidth;
     _bubbleWidth = (_bubbleSide == bSideRight) ? _bubbleWidth : _cellWidth - _bubbleWidth;
     
-    _textBubble.frame = CGRectMake(bubbleGutter, 10, _bubbleWidth - 5, _bubbleHeight);
+    _textBubble.frame = CGRectMake(bubbleGutter, 0, _bubbleWidth - 5, _bubbleHeight);
     
     //Add other mask layers that, combined, will shape
     //what the final mask will be
-    _bubbleTriangle.frame = CGRectMake(bubbleGutter - 5, 23, 10, 20);
-    _bubbleView.frame = CGRectMake(bubbleGutter, 10, _bubbleWidth - 5, _bubbleHeight);
+    _bubbleTriangle.frame = CGRectMake(bubbleGutter - 5, 13, 10, 20);
+    _bubbleView.frame = CGRectMake(bubbleGutter, 0, _bubbleWidth - 5, _bubbleHeight);
 }
 
 
