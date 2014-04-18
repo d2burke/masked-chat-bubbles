@@ -8,6 +8,7 @@
 
 #import "ChatViewController.h"
 #import "ChatBubbleCell.h"
+#import "UIImage+ImageEffects.h"
 
 @interface ChatViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -16,6 +17,7 @@
 @implementation ChatViewController{
     UITableView *chatTable;
     NSArray *chatImages;
+    UIImageView *blurImageView;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -30,6 +32,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    blurImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    blurImageView.contentMode = UIViewContentModeScaleAspectFill;
+    [self.view addSubview:blurImageView];
+    
+    UIColor *tintColor = [[UIColor whiteColor] colorWithAlphaComponent:0.1];
+    UIImage *img = [UIImage imageNamed:@"virginia-beaches.jpg"];
+    img = [img applyBlurWithRadius:3 tintColor:tintColor saturationDeltaFactor:1.8 maskImage:nil];
+    blurImageView.image = img;
     
     chatImages = [[NSArray alloc] initWithObjects:
                   @"ferry.jpg",
@@ -46,6 +57,7 @@
                   nil];
     
     chatTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    chatTable.backgroundColor = [UIColor clearColor];
     chatTable.delegate = self;
     chatTable.dataSource = self;
     chatTable.separatorStyle = UITableViewCellSeparatorStyleNone;

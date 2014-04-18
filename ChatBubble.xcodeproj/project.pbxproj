@@ -41,6 +41,10 @@
 		C57030E719015DCE001CF089 /* ChatBubbleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C57030E619015DCE001CF089 /* ChatBubbleTests.m */; };
 		C57030F219015DED001CF089 /* Triangle.m in Sources */ = {isa = PBXBuildFile; fileRef = C57030F119015DED001CF089 /* Triangle.m */; };
 		C57030F519015DFA001CF089 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57030F419015DFA001CF089 /* ChatViewController.m */; };
+		C5A4931E1901B87E0041723E /* user_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A4931C1901B87E0041723E /* user_placeholder.png */; };
+		C5A4931F1901B87E0041723E /* user_placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A4931D1901B87E0041723E /* user_placeholder@2x.png */; };
+		C5A493211901B9400041723E /* virginia-beaches.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5A493201901B9400041723E /* virginia-beaches.jpg */; };
+		C5A493241901B9A20041723E /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A493231901B9A20041723E /* UIImage+ImageEffects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +99,11 @@
 		C57030F119015DED001CF089 /* Triangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Triangle.m; sourceTree = "<group>"; };
 		C57030F319015DFA001CF089 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
 		C57030F419015DFA001CF089 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		C5A4931C1901B87E0041723E /* user_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_placeholder.png; sourceTree = "<group>"; };
+		C5A4931D1901B87E0041723E /* user_placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_placeholder@2x.png"; sourceTree = "<group>"; };
+		C5A493201901B9400041723E /* virginia-beaches.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "virginia-beaches.jpg"; sourceTree = "<group>"; };
+		C5A493221901B9A20041723E /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		C5A493231901B9A20041723E /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +133,7 @@
 		C56580891901855400BE4244 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C5A493201901B9400041723E /* virginia-beaches.jpg */,
 				C56580AE1901A90700BE4244 /* Users */,
 				C565807119016FC600BE4244 /* ferry.jpg */,
 				C56580731901854F00BE4244 /* goodnight.png */,
@@ -144,6 +154,8 @@
 		C56580AE1901A90700BE4244 /* Users */ = {
 			isa = PBXGroup;
 			children = (
+				C5A4931C1901B87E0041723E /* user_placeholder.png */,
+				C5A4931D1901B87E0041723E /* user_placeholder@2x.png */,
 				C565809E1901A8E100BE4244 /* john.jpg */,
 				C565809F1901A8E100BE4244 /* tess.jpg */,
 				C56580A01901A8E100BE4244 /* feather.jpg */,
@@ -193,6 +205,8 @@
 				C57030F319015DFA001CF089 /* ChatViewController.h */,
 				C57030F419015DFA001CF089 /* ChatViewController.m */,
 				C57030D319015DCD001CF089 /* Images.xcassets */,
+				C5A493221901B9A20041723E /* UIImage+ImageEffects.h */,
+				C5A493231901B9A20041723E /* UIImage+ImageEffects.m */,
 				C57030F019015DED001CF089 /* Triangle.h */,
 				C57030F119015DED001CF089 /* Triangle.m */,
 				C565806E1901640D00BE4244 /* ChatBubbleCell.h */,
@@ -309,6 +323,7 @@
 			files = (
 				C565807219016FC600BE4244 /* ferry.jpg in Resources */,
 				C56580A71901A8E100BE4244 /* feather.jpg in Resources */,
+				C5A4931F1901B87E0041723E /* user_placeholder@2x.png in Resources */,
 				C56580A51901A8E100BE4244 /* john.jpg in Resources */,
 				C56580801901854F00BE4244 /* storm.jpg in Resources */,
 				C56580821901854F00BE4244 /* crimea.jpg in Resources */,
@@ -319,12 +334,14 @@
 				C56580A61901A8E100BE4244 /* tess.jpg in Resources */,
 				C56580851901854F00BE4244 /* healthcaregov.jpg in Resources */,
 				C56580841901854F00BE4244 /* flight.jpg in Resources */,
+				C5A4931E1901B87E0041723E /* user_placeholder.png in Resources */,
 				C56580AA1901A8E100BE4244 /* neil.jpg in Resources */,
 				C57030CC19015DCD001CF089 /* InfoPlist.strings in Resources */,
 				C56580831901854F00BE4244 /* fallon.jpg in Resources */,
 				C56580811901854F00BE4244 /* harlem.jpg in Resources */,
 				C57030D419015DCD001CF089 /* Images.xcassets in Resources */,
 				C56580A91901A8E100BE4244 /* eva.jpg in Resources */,
+				C5A493211901B9400041723E /* virginia-beaches.jpg in Resources */,
 				C56580861901854F00BE4244 /* mvp.jpg in Resources */,
 				C565807F1901854F00BE4244 /* obama.jpg in Resources */,
 				C565807E1901854F00BE4244 /* goodnight.png in Resources */,
@@ -348,6 +365,7 @@
 			files = (
 				C57030D219015DCD001CF089 /* AppDelegate.m in Sources */,
 				C56580701901640D00BE4244 /* ChatBubbleCell.m in Sources */,
+				C5A493241901B9A20041723E /* UIImage+ImageEffects.m in Sources */,
 				C57030CE19015DCD001CF089 /* main.m in Sources */,
 				C57030F519015DFA001CF089 /* ChatViewController.m in Sources */,
 				C57030F219015DED001CF089 /* Triangle.m in Sources */,
