@@ -17,10 +17,15 @@ typedef enum BubbleSide{
 @interface ChatBubbleCell : UITableViewCell
 
 @property (copy,nonatomic) UIView *bubbleContainer;
+@property (copy, nonatomic) UIView *contentContainer;
 @property (copy, nonatomic) UITextView *textBubble;
 @property (copy, nonatomic) Triangle *bubbleTriangle;
 @property (copy, nonatomic) UIView *bubbleView;
+@property (copy, nonatomic) UIColor *bubbleColor;
+@property (copy, nonatomic) UIColor *textColor;
+@property (copy, nonatomic) UIColor *borderColor;
 @property (copy, nonatomic) UIImageView *chatImageView;
+@property (copy, nonatomic) CALayer *maskLayer;
 
 @property (copy, nonatomic) UILabel *userNameLabel;
 @property (copy, nonatomic) UIImageView *userImageView;
@@ -29,5 +34,8 @@ typedef enum BubbleSide{
 @property (nonatomic) CGFloat bubbleHeight;
 @property (nonatomic) BOOL userSquareEdges;
 @property (nonatomic) BubbleSide *bubbleSide;
+
+//Action
+-(void)addContent:(UIView*)content;
 
 @end

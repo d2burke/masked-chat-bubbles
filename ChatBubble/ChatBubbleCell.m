@@ -17,21 +17,24 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
         self.backgroundColor = [UIColor clearColor];
         _cellWidth = self.frame.size.width;
         _bubbleWidth = (_bubbleSide == bSideRight) ? 310 : _cellWidth - 310;
         _bubbleHeight = 120;
         bubbleGutter = 50;
         
+        _textColor = [UIColor whiteColor];
+        _bubbleColor = [[UIColor blackColor] colorWithAlphaComponent:0.6];
+        
         //Add container to cell
         _bubbleContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, _cellWidth, _bubbleHeight)];
-        _bubbleContainer.backgroundColor = [UIColor lightGrayColor];
+        _bubbleContainer.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
         [self addSubview:_bubbleContainer];
         
         //Add user image
         _userImageView = [[UIImageView alloc] initWithFrame:CGRectMake(5, 5, 36, 36)];
         _userImageView.image = [UIImage imageNamed:@"user_placeholder"];
-        _userImageView.backgroundColor = [UIColor lightGrayColor];
         _userImageView.layer.cornerRadius = 18;
         _userImageView.clipsToBounds = YES;
         [self addSubview:_userImageView];
@@ -51,9 +54,9 @@
         [_bubbleContainer addSubview:_textBubble];
         
         //Create a mask layer that covers everthing
-        CALayer *maskLayer = [CALayer layer];
-        maskLayer.frame = self.frame;
-        [_bubbleContainer.layer addSublayer:maskLayer];
+        _maskLayer = [CALayer layer];
+        _maskLayer.frame = self.frame;
+        [_bubbleContainer.layer addSublayer:_maskLayer];
         //Add other mask layers that, combined, will shape
         //what the final mask will be
         //No need to add the actual view, as the layer is all we need
@@ -62,14 +65,10 @@
         //No need to add the actual view, as the layer is all we need
         _bubbleView = [[UITextView alloc] init];
         _bubbleView.layer.cornerRadius = 10.f;
-        [maskLayer addSublayer:_bubbleTriangle.layer];
-        [maskLayer addSublayer:_bubbleView.layer];
-        _bubbleContainer.layer.mask = maskLayer;
+        [_maskLayer addSublayer:_bubbleTriangle.layer];
+        [_maskLayer addSublayer:_bubbleView.layer];
+        _bubbleContainer.layer.mask = _maskLayer;
         _bubbleContainer.layer.masksToBounds = YES;
-        
-        
-        
-        
     }
     return self;
 }
@@ -77,13 +76,14 @@
 -(void)layoutSubviews{
     _bubbleWidth = (_bubbleWidth > 310) ? 310 : _bubbleWidth;
     _bubbleWidth = (_bubbleSide == bSideRight) ? _bubbleWidth - 40 : _cellWidth - _bubbleWidth;
-    
     _textBubble.frame = CGRectMake(bubbleGutter, 0, _bubbleWidth - 5, _bubbleHeight);
-    
     //Add other mask layers that, combined, will shape
     //what the final mask will be
     _bubbleTriangle.frame = CGRectMake(bubbleGutter - 5, 13, 10, 20);
     _bubbleView.frame = CGRectMake(bubbleGutter, 0, _bubbleWidth - 5, _bubbleHeight);
+    
+    _textBubble.textColor = _textColor;
+    _bubbleContainer.backgroundColor = _bubbleColor;
 }
 
 

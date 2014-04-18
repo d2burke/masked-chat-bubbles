@@ -18,6 +18,7 @@
     UITableView *chatTable;
     NSArray *chatImages;
     UIImageView *blurImageView;
+    NSArray *widths;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -55,7 +56,7 @@
                   @"pistorius.jpg",
                   @"snowden.jpg",
                   nil];
-    
+    widths = @[@220, @240, @295, @200, @310, @310, @290, @260, @160, @180, @310];
     chatTable = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     chatTable.backgroundColor = [UIColor clearColor];
     chatTable.delegate = self;
@@ -94,14 +95,15 @@
     if(cell == nil){
         cell = [[ChatBubbleCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    if(indexPath.row != 2){
+    if(indexPath.row == 2){
+        cell.chatImageView.image = [[UIImage alloc] init];
+    }
+    else{
         cell.chatImageView.image = [UIImage imageNamed:[chatImages objectAtIndex:indexPath.row]];
     }
-    CGFloat r = arc4random() % 31 + 10;
-    NSLog(@"Number: %f", r);
-    cell.bubbleWidth = r * 10; //Max width to be set is 310 because of a 5pt gutter on each side
-    cell.textBubble.text = @"This is some text in a chat bubble";
     
+    cell.bubbleWidth = [[widths objectAtIndex:indexPath.row] floatValue]; //Max width to be set is 310 because of a 5pt gutter on each side
+    cell.textBubble.text = @"This is some text in a chat bubble";
     return cell;
 }
 
