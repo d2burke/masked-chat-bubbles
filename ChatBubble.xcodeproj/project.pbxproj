@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C56580701901640D00BE4244 /* ChatBubbleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C565806F1901640D00BE4244 /* ChatBubbleCell.m */; };
+		C565807219016FC600BE4244 /* ferry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C565807119016FC600BE4244 /* ferry.jpg */; };
+		C565807E1901854F00BE4244 /* goodnight.png in Resources */ = {isa = PBXBuildFile; fileRef = C56580731901854F00BE4244 /* goodnight.png */; };
+		C565807F1901854F00BE4244 /* obama.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C56580741901854F00BE4244 /* obama.jpg */; };
+		C56580801901854F00BE4244 /* storm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C56580751901854F00BE4244 /* storm.jpg */; };
+		C56580811901854F00BE4244 /* harlem.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C56580761901854F00BE4244 /* harlem.jpg */; };
+		C56580821901854F00BE4244 /* crimea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C56580771901854F00BE4244 /* crimea.jpg */; };
+		C56580831901854F00BE4244 /* fallon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C56580781901854F00BE4244 /* fallon.jpg */; };
+		C56580841901854F00BE4244 /* flight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C56580791901854F00BE4244 /* flight.jpg */; };
+		C56580851901854F00BE4244 /* healthcaregov.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C565807A1901854F00BE4244 /* healthcaregov.jpg */; };
+		C56580861901854F00BE4244 /* mvp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C565807B1901854F00BE4244 /* mvp.jpg */; };
+		C56580871901854F00BE4244 /* pistorius.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C565807C1901854F00BE4244 /* pistorius.jpg */; };
+		C56580881901854F00BE4244 /* snowden.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C565807D1901854F00BE4244 /* snowden.jpg */; };
+		C57030C219015DCD001CF089 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57030C119015DCD001CF089 /* Foundation.framework */; };
+		C57030C419015DCD001CF089 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57030C319015DCD001CF089 /* CoreGraphics.framework */; };
+		C57030C619015DCD001CF089 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57030C519015DCD001CF089 /* UIKit.framework */; };
+		C57030CC19015DCD001CF089 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C57030CA19015DCD001CF089 /* InfoPlist.strings */; };
+		C57030CE19015DCD001CF089 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C57030CD19015DCD001CF089 /* main.m */; };
+		C57030D219015DCD001CF089 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C57030D119015DCD001CF089 /* AppDelegate.m */; };
+		C57030D419015DCD001CF089 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C57030D319015DCD001CF089 /* Images.xcassets */; };
+		C57030DB19015DCE001CF089 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57030DA19015DCE001CF089 /* XCTest.framework */; };
+		C57030DC19015DCE001CF089 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57030C119015DCD001CF089 /* Foundation.framework */; };
+		C57030DD19015DCE001CF089 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57030C519015DCD001CF089 /* UIKit.framework */; };
+		C57030E519015DCE001CF089 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C57030E319015DCE001CF089 /* InfoPlist.strings */; };
+		C57030E719015DCE001CF089 /* ChatBubbleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C57030E619015DCE001CF089 /* ChatBubbleTests.m */; };
+		C57030F219015DED001CF089 /* Triangle.m in Sources */ = {isa = PBXBuildFile; fileRef = C57030F119015DED001CF089 /* Triangle.m */; };
+		C57030F519015DFA001CF089 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57030F419015DFA001CF089 /* ChatViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C57030DE19015DCE001CF089 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C57030B619015DCD001CF089 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C57030BD19015DCD001CF089;
+			remoteInfo = ChatBubble;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C565806E1901640D00BE4244 /* ChatBubbleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatBubbleCell.h; sourceTree = "<group>"; };
+		C565806F1901640D00BE4244 /* ChatBubbleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatBubbleCell.m; sourceTree = "<group>"; };
+		C565807119016FC600BE4244 /* ferry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ferry.jpg; sourceTree = "<group>"; };
+		C56580731901854F00BE4244 /* goodnight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goodnight.png; sourceTree = "<group>"; };
+		C56580741901854F00BE4244 /* obama.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = obama.jpg; sourceTree = "<group>"; };
+		C56580751901854F00BE4244 /* storm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = storm.jpg; sourceTree = "<group>"; };
+		C56580761901854F00BE4244 /* harlem.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = harlem.jpg; sourceTree = "<group>"; };
+		C56580771901854F00BE4244 /* crimea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = crimea.jpg; sourceTree = "<group>"; };
+		C56580781901854F00BE4244 /* fallon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fallon.jpg; sourceTree = "<group>"; };
+		C56580791901854F00BE4244 /* flight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flight.jpg; sourceTree = "<group>"; };
+		C565807A1901854F00BE4244 /* healthcaregov.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = healthcaregov.jpg; sourceTree = "<group>"; };
+		C565807B1901854F00BE4244 /* mvp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mvp.jpg; sourceTree = "<group>"; };
+		C565807C1901854F00BE4244 /* pistorius.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pistorius.jpg; sourceTree = "<group>"; };
+		C565807D1901854F00BE4244 /* snowden.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = snowden.jpg; sourceTree = "<group>"; };
+		C57030BE19015DCD001CF089 /* ChatBubble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBubble.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C57030C119015DCD001CF089 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C57030C319015DCD001CF089 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C57030C519015DCD001CF089 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C57030C919015DCD001CF089 /* ChatBubble-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChatBubble-Info.plist"; sourceTree = "<group>"; };
+		C57030CB19015DCD001CF089 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C57030CD19015DCD001CF089 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C57030CF19015DCD001CF089 /* ChatBubble-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChatBubble-Prefix.pch"; sourceTree = "<group>"; };
+		C57030D019015DCD001CF089 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C57030D119015DCD001CF089 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C57030D319015DCD001CF089 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C57030D919015DCE001CF089 /* ChatBubbleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatBubbleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C57030DA19015DCE001CF089 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C57030E219015DCE001CF089 /* ChatBubbleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChatBubbleTests-Info.plist"; sourceTree = "<group>"; };
+		C57030E419015DCE001CF089 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C57030E619015DCE001CF089 /* ChatBubbleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatBubbleTests.m; sourceTree = "<group>"; };
+		C57030F019015DED001CF089 /* Triangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Triangle.h; sourceTree = "<group>"; };
+		C57030F119015DED001CF089 /* Triangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Triangle.m; sourceTree = "<group>"; };
+		C57030F319015DFA001CF089 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		C57030F419015DFA001CF089 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C57030BB19015DCD001CF089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C57030C419015DCD001CF089 /* CoreGraphics.framework in Frameworks */,
+				C57030C619015DCD001CF089 /* UIKit.framework in Frameworks */,
+				C57030C219015DCD001CF089 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C57030D619015DCE001CF089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C57030DB19015DCE001CF089 /* XCTest.framework in Frameworks */,
+				C57030DD19015DCE001CF089 /* UIKit.framework in Frameworks */,
+				C57030DC19015DCE001CF089 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C56580891901855400BE4244 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C565807119016FC600BE4244 /* ferry.jpg */,
+				C56580731901854F00BE4244 /* goodnight.png */,
+				C56580741901854F00BE4244 /* obama.jpg */,
+				C56580751901854F00BE4244 /* storm.jpg */,
+				C56580761901854F00BE4244 /* harlem.jpg */,
+				C56580771901854F00BE4244 /* crimea.jpg */,
+				C56580781901854F00BE4244 /* fallon.jpg */,
+				C56580791901854F00BE4244 /* flight.jpg */,
+				C565807A1901854F00BE4244 /* healthcaregov.jpg */,
+				C565807B1901854F00BE4244 /* mvp.jpg */,
+				C565807C1901854F00BE4244 /* pistorius.jpg */,
+				C565807D1901854F00BE4244 /* snowden.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		C57030B519015DCD001CF089 = {
+			isa = PBXGroup;
+			children = (
+				C57030C719015DCD001CF089 /* ChatBubble */,
+				C57030E019015DCE001CF089 /* ChatBubbleTests */,
+				C57030C019015DCD001CF089 /* Frameworks */,
+				C57030BF19015DCD001CF089 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C57030BF19015DCD001CF089 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C57030BE19015DCD001CF089 /* ChatBubble.app */,
+				C57030D919015DCE001CF089 /* ChatBubbleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C57030C019015DCD001CF089 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C57030C119015DCD001CF089 /* Foundation.framework */,
+				C57030C319015DCD001CF089 /* CoreGraphics.framework */,
+				C57030C519015DCD001CF089 /* UIKit.framework */,
+				C57030DA19015DCE001CF089 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C57030C719015DCD001CF089 /* ChatBubble */ = {
+			isa = PBXGroup;
+			children = (
+				C57030D019015DCD001CF089 /* AppDelegate.h */,
+				C57030D119015DCD001CF089 /* AppDelegate.m */,
+				C57030F319015DFA001CF089 /* ChatViewController.h */,
+				C57030F419015DFA001CF089 /* ChatViewController.m */,
+				C57030D319015DCD001CF089 /* Images.xcassets */,
+				C57030F019015DED001CF089 /* Triangle.h */,
+				C57030F119015DED001CF089 /* Triangle.m */,
+				C565806E1901640D00BE4244 /* ChatBubbleCell.h */,
+				C565806F1901640D00BE4244 /* ChatBubbleCell.m */,
+				C56580891901855400BE4244 /* Images */,
+				C57030C819015DCD001CF089 /* Supporting Files */,
+			);
+			path = ChatBubble;
+			sourceTree = "<group>";
+		};
+		C57030C819015DCD001CF089 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C57030C919015DCD001CF089 /* ChatBubble-Info.plist */,
+				C57030CA19015DCD001CF089 /* InfoPlist.strings */,
+				C57030CD19015DCD001CF089 /* main.m */,
+				C57030CF19015DCD001CF089 /* ChatBubble-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C57030E019015DCE001CF089 /* ChatBubbleTests */ = {
+			isa = PBXGroup;
+			children = (
+				C57030E619015DCE001CF089 /* ChatBubbleTests.m */,
+				C57030E119015DCE001CF089 /* Supporting Files */,
+			);
+			path = ChatBubbleTests;
+			sourceTree = "<group>";
+		};
+		C57030E119015DCE001CF089 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C57030E219015DCE001CF089 /* ChatBubbleTests-Info.plist */,
+				C57030E319015DCE001CF089 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C57030BD19015DCD001CF089 /* ChatBubble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C57030EA19015DCE001CF089 /* Build configuration list for PBXNativeTarget "ChatBubble" */;
+			buildPhases = (
+				C57030BA19015DCD001CF089 /* Sources */,
+				C57030BB19015DCD001CF089 /* Frameworks */,
+				C57030BC19015DCD001CF089 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatBubble;
+			productName = ChatBubble;
+			productReference = C57030BE19015DCD001CF089 /* ChatBubble.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C57030D819015DCE001CF089 /* ChatBubbleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C57030ED19015DCE001CF089 /* Build configuration list for PBXNativeTarget "ChatBubbleTests" */;
+			buildPhases = (
+				C57030D519015DCE001CF089 /* Sources */,
+				C57030D619015DCE001CF089 /* Frameworks */,
+				C57030D719015DCE001CF089 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C57030DF19015DCE001CF089 /* PBXTargetDependency */,
+			);
+			name = ChatBubbleTests;
+			productName = ChatBubbleTests;
+			productReference = C57030D919015DCE001CF089 /* ChatBubbleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C57030B619015DCD001CF089 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = D2;
+				TargetAttributes = {
+					C57030D819015DCE001CF089 = {
+						TestTargetID = C57030BD19015DCD001CF089;
+					};
+				};
+			};
+			buildConfigurationList = C57030B919015DCD001CF089 /* Build configuration list for PBXProject "ChatBubble" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C57030B519015DCD001CF089;
+			productRefGroup = C57030BF19015DCD001CF089 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C57030BD19015DCD001CF089 /* ChatBubble */,
+				C57030D819015DCE001CF089 /* ChatBubbleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C57030BC19015DCD001CF089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C565807219016FC600BE4244 /* ferry.jpg in Resources */,
+				C56580801901854F00BE4244 /* storm.jpg in Resources */,
+				C56580821901854F00BE4244 /* crimea.jpg in Resources */,
+				C56580871901854F00BE4244 /* pistorius.jpg in Resources */,
+				C56580881901854F00BE4244 /* snowden.jpg in Resources */,
+				C56580851901854F00BE4244 /* healthcaregov.jpg in Resources */,
+				C56580841901854F00BE4244 /* flight.jpg in Resources */,
+				C57030CC19015DCD001CF089 /* InfoPlist.strings in Resources */,
+				C56580831901854F00BE4244 /* fallon.jpg in Resources */,
+				C56580811901854F00BE4244 /* harlem.jpg in Resources */,
+				C57030D419015DCD001CF089 /* Images.xcassets in Resources */,
+				C56580861901854F00BE4244 /* mvp.jpg in Resources */,
+				C565807F1901854F00BE4244 /* obama.jpg in Resources */,
+				C565807E1901854F00BE4244 /* goodnight.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C57030D719015DCE001CF089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C57030E519015DCE001CF089 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C57030BA19015DCD001CF089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C57030D219015DCD001CF089 /* AppDelegate.m in Sources */,
+				C56580701901640D00BE4244 /* ChatBubbleCell.m in Sources */,
+				C57030CE19015DCD001CF089 /* main.m in Sources */,
+				C57030F519015DFA001CF089 /* ChatViewController.m in Sources */,
+				C57030F219015DED001CF089 /* Triangle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C57030D519015DCE001CF089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C57030E719015DCE001CF089 /* ChatBubbleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C57030DF19015DCE001CF089 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C57030BD19015DCD001CF089 /* ChatBubble */;
+			targetProxy = C57030DE19015DCE001CF089 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C57030CA19015DCD001CF089 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C57030CB19015DCD001CF089 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C57030E319015DCE001CF089 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C57030E419015DCE001CF089 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C57030E819015DCE001CF089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C57030E919015DCE001CF089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C57030EB19015DCE001CF089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChatBubble/ChatBubble-Prefix.pch";
+				INFOPLIST_FILE = "ChatBubble/ChatBubble-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C57030EC19015DCE001CF089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChatBubble/ChatBubble-Prefix.pch";
+				INFOPLIST_FILE = "ChatBubble/ChatBubble-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C57030EE19015DCE001CF089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ChatBubble.app/ChatBubble";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChatBubble/ChatBubble-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ChatBubbleTests/ChatBubbleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C57030EF19015DCE001CF089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ChatBubble.app/ChatBubble";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChatBubble/ChatBubble-Prefix.pch";
+				INFOPLIST_FILE = "ChatBubbleTests/ChatBubbleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C57030B919015DCD001CF089 /* Build configuration list for PBXProject "ChatBubble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C57030E819015DCE001CF089 /* Debug */,
+				C57030E919015DCE001CF089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C57030EA19015DCE001CF089 /* Build configuration list for PBXNativeTarget "ChatBubble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C57030EB19015DCE001CF089 /* Debug */,
+				C57030EC19015DCE001CF089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C57030ED19015DCE001CF089 /* Build configuration list for PBXNativeTarget "ChatBubbleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C57030EE19015DCE001CF089 /* Debug */,
+				C57030EF19015DCE001CF089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C57030B619015DCD001CF089 /* Project object */;
+}
