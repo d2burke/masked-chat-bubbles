@@ -94,12 +94,12 @@
     if(cell == nil){
         cell = [[ChatBubbleCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    if(indexPath.row != 2){
-        cell.chatImageView.image = [UIImage imageNamed:[chatImages objectAtIndex:indexPath.row]];
-    }
-    
-    cell.bubbleWidth = 120; //Max width to be set is 310 because of a 5pt gutter on each side
-    cell.textBubble.text = @"This is some text in a chat bubble";
+//    if(indexPath.row != 2){
+//        cell.chatImageView.image = [UIImage imageNamed:[chatImages objectAtIndex:indexPath.row]];
+//    }
+//    
+//    cell.bubbleWidth = 120; //Max width to be set is 310 because of a 5pt gutter on each side
+//    cell.textBubble.text = @"This is some text in a chat bubble";
     
     return cell;
 }

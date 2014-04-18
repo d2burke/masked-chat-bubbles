@@ -19,7 +19,7 @@
     if (self) {
         self.backgroundColor = [UIColor clearColor];
         _cellWidth = self.frame.size.width;
-        _bubbleWidth = (_bubbleSide == bSideRight) ? 200 : _cellWidth - 200;
+        _bubbleWidth = (_bubbleSide == bSideRight) ? 310 : _cellWidth - 310;
         _bubbleHeight = 120;
         bubbleGutter = 50;
         
@@ -76,7 +76,7 @@
 
 -(void)layoutSubviews{
     _bubbleWidth = (_bubbleWidth > 310) ? 310 : _bubbleWidth;
-    _bubbleWidth = (_bubbleSide == bSideRight) ? _bubbleWidth : _cellWidth - _bubbleWidth;
+    _bubbleWidth = (_bubbleSide == bSideRight) ? _bubbleWidth - 40 : _cellWidth - _bubbleWidth;
     
     _textBubble.frame = CGRectMake(bubbleGutter, 0, _bubbleWidth - 5, _bubbleHeight);
     
