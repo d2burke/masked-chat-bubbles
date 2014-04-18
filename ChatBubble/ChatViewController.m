@@ -61,16 +61,6 @@
 
 #pragma mark - UITableView Delegate Methods
 
--(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 120)];
-    headerView.backgroundColor = [UIColor whiteColor];
-    return headerView;
-}
-
--(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 120;
-}
-
 -(UIView*)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
     UIView *footerSpacer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 7)];
     footerSpacer.backgroundColor = [UIColor clearColor];
