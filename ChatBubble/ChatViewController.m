@@ -49,6 +49,7 @@
     chatTable.delegate = self;
     chatTable.dataSource = self;
     chatTable.separatorStyle = UITableViewCellSeparatorStyleNone;
+    chatTable.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
     [self.view addSubview:chatTable];
 }
 
@@ -73,7 +74,7 @@
     return  120;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 6;
+    return [chatImages count];
 }
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier = @"cell";
@@ -84,6 +85,8 @@
     if(indexPath.row != 2){
         cell.chatImageView.image = [UIImage imageNamed:[chatImages objectAtIndex:indexPath.row]];
     }
+    
+    cell.bubbleWidth = 120; //Max width to be set is 310 because of a 5pt gutter on each side
     cell.textBubble.text = @"This is some text in a chat bubble";
     
     return cell;

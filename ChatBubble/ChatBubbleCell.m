@@ -9,25 +9,32 @@
 #import "ChatBubbleCell.h"
 #import <QuartzCore/QuartzCore.h>
 
-@implementation ChatBubbleCell
+@implementation ChatBubbleCell{
+    CGFloat bubbleGutter;
+}
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        _cellWidth = self.frame.size.width;
+        _bubbleWidth = (_bubbleSide == bSideRight) ? 200 : _cellWidth - 200;
+        _bubbleHeight = 120;
+        bubbleGutter = (_bubbleSide == bSideRight) ? _cellWidth - _bubbleWidth : _bubbleWidth;
         
         //Add container to cell
-        _bubbleContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 10, 310, 100)];
+        _bubbleContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, _cellWidth, _bubbleHeight)];
         _bubbleContainer.backgroundColor = [UIColor lightGrayColor];
         [self addSubview:_bubbleContainer];
         
         //Add image to cell
-        _chatImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 120)];
+        _chatImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, _cellWidth, _bubbleHeight)];
         _chatImageView.contentMode = UIViewContentModeScaleAspectFill;
         [_bubbleContainer addSubview:_chatImageView];
         
         //Add text to cell
-        _textBubble = [[UITextView alloc] initWithFrame:CGRectMake(20, 0, 290, 100)];
+        _textBubble = [[UITextView alloc] initWithFrame:CGRectMake(bubbleGutter, 0, _bubbleWidth - 5, _bubbleHeight)];
+        _textBubble.editable = NO;
         _textBubble.backgroundColor = [UIColor clearColor];
         _textBubble.layer.cornerRadius = 10.f;
         [_bubbleContainer addSubview:_textBubble];
@@ -40,11 +47,11 @@
         //Add other mask layers that, combined, will shape
         //what the final mask will be
         
-        _bubbleTriangle = [[Triangle alloc] initWithFrame:CGRectMake(13, 15, 10, 20)];
+        _bubbleTriangle = [[Triangle alloc] initWithFrame:CGRectMake(bubbleGutter - 5, 15, 10, 20)];
         _bubbleTriangle.direction = tDirectionLeft;
         //No need to add the actual view, as the layer is all we need
         
-        _bubbleView = [[UITextView alloc] initWithFrame:CGRectMake(20, 0, 290, 100)];
+        _bubbleView = [[UITextView alloc] initWithFrame:CGRectMake(bubbleGutter, 0, _bubbleWidth - 5, _bubbleHeight)];
         _bubbleView.layer.cornerRadius = 10.f;
         //No need to add the actual view, as the layer is all we need
         
@@ -58,6 +65,21 @@
     return self;
 }
 
+-(void)layoutSubviews{
+    _bubbleHeight = 120;
+    _bubbleWidth = (_bubbleWidth > 310) ? 310 : _bubbleWidth;
+    _bubbleWidth = (_bubbleSide == bSideRight) ? _bubbleWidth : _cellWidth - _bubbleWidth;
+    bubbleGutter = (_bubbleSide == bSideRight) ? _cellWidth - _bubbleWidth : _bubbleWidth;
+    
+    _textBubble.frame = CGRectMake(bubbleGutter, 0, _bubbleWidth - 5, _bubbleHeight);
+    
+    //Add other mask layers that, combined, will shape
+    //what the final mask will be
+    _bubbleTriangle.frame = CGRectMake(bubbleGutter - 5, 15, 10, 20);
+    _bubbleView.frame = CGRectMake(bubbleGutter, 0, _bubbleWidth - 5, _bubbleHeight);
+}
+
+
 - (void)awakeFromNib
 {
     // Initialization code
@@ -68,6 +90,26 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (BOOL)isWallPixel:(UIImage*)image x:(int)x y:(int)y {
+    
+    CFDataRef pixelData = CGDataProviderCopyData(CGImageGetDataProvider(image.CGImage));
+    const UInt8* data = CFDataGetBytePtr(pixelData);
+    
+    int pixelInfo = ((image.size.width  * y) + x ) * 4; // The image is png
+    
+    //UInt8 red = data[pixelInfo];         // If you need this info, enable it
+    //UInt8 green = data[(pixelInfo + 1)]; // If you need this info, enable it
+    //UInt8 blue = data[pixelInfo + 2];    // If you need this info, enable it
+    UInt8 alpha = data[pixelInfo + 3];     // I need only this info for my maze game
+    CFRelease(pixelData);
+    
+    //UIColor* color = [UIColor colorWithRed:red/255.0f green:green/255.0f blue:blue/255.0f alpha:alpha/255.0f]; // The pixel color info
+    
+    if (alpha) return YES;
+    else return NO;
+    
 }
 
 @end

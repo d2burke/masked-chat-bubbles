@@ -20,6 +20,13 @@
 		C56580861901854F00BE4244 /* mvp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C565807B1901854F00BE4244 /* mvp.jpg */; };
 		C56580871901854F00BE4244 /* pistorius.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C565807C1901854F00BE4244 /* pistorius.jpg */; };
 		C56580881901854F00BE4244 /* snowden.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C565807D1901854F00BE4244 /* snowden.jpg */; };
+		C56580A51901A8E100BE4244 /* john.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C565809E1901A8E100BE4244 /* john.jpg */; };
+		C56580A61901A8E100BE4244 /* tess.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C565809F1901A8E100BE4244 /* tess.jpg */; };
+		C56580A71901A8E100BE4244 /* feather.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C56580A01901A8E100BE4244 /* feather.jpg */; };
+		C56580A81901A8E100BE4244 /* james.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C56580A11901A8E100BE4244 /* james.jpg */; };
+		C56580A91901A8E100BE4244 /* eva.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C56580A21901A8E100BE4244 /* eva.jpg */; };
+		C56580AA1901A8E100BE4244 /* neil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C56580A31901A8E100BE4244 /* neil.jpg */; };
+		C56580AD1901A8FF00BE4244 /* mark.png in Resources */ = {isa = PBXBuildFile; fileRef = C56580AC1901A8FF00BE4244 /* mark.png */; };
 		C57030C219015DCD001CF089 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57030C119015DCD001CF089 /* Foundation.framework */; };
 		C57030C419015DCD001CF089 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57030C319015DCD001CF089 /* CoreGraphics.framework */; };
 		C57030C619015DCD001CF089 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57030C519015DCD001CF089 /* UIKit.framework */; };
@@ -61,6 +68,13 @@
 		C565807B1901854F00BE4244 /* mvp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mvp.jpg; sourceTree = "<group>"; };
 		C565807C1901854F00BE4244 /* pistorius.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pistorius.jpg; sourceTree = "<group>"; };
 		C565807D1901854F00BE4244 /* snowden.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = snowden.jpg; sourceTree = "<group>"; };
+		C565809E1901A8E100BE4244 /* john.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = john.jpg; sourceTree = "<group>"; };
+		C565809F1901A8E100BE4244 /* tess.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tess.jpg; sourceTree = "<group>"; };
+		C56580A01901A8E100BE4244 /* feather.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = feather.jpg; sourceTree = "<group>"; };
+		C56580A11901A8E100BE4244 /* james.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = james.jpg; sourceTree = "<group>"; };
+		C56580A21901A8E100BE4244 /* eva.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eva.jpg; sourceTree = "<group>"; };
+		C56580A31901A8E100BE4244 /* neil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = neil.jpg; sourceTree = "<group>"; };
+		C56580AC1901A8FF00BE4244 /* mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mark.png; sourceTree = "<group>"; };
 		C57030BE19015DCD001CF089 /* ChatBubble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBubble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57030C119015DCD001CF089 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C57030C319015DCD001CF089 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -110,6 +124,7 @@
 		C56580891901855400BE4244 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C56580AE1901A90700BE4244 /* Users */,
 				C565807119016FC600BE4244 /* ferry.jpg */,
 				C56580731901854F00BE4244 /* goodnight.png */,
 				C56580741901854F00BE4244 /* obama.jpg */,
@@ -124,6 +139,20 @@
 				C565807D1901854F00BE4244 /* snowden.jpg */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		C56580AE1901A90700BE4244 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				C565809E1901A8E100BE4244 /* john.jpg */,
+				C565809F1901A8E100BE4244 /* tess.jpg */,
+				C56580A01901A8E100BE4244 /* feather.jpg */,
+				C56580A11901A8E100BE4244 /* james.jpg */,
+				C56580A21901A8E100BE4244 /* eva.jpg */,
+				C56580AC1901A8FF00BE4244 /* mark.png */,
+				C56580A31901A8E100BE4244 /* neil.jpg */,
+			);
+			name = Users;
 			sourceTree = "<group>";
 		};
 		C57030B519015DCD001CF089 = {
@@ -279,16 +308,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				C565807219016FC600BE4244 /* ferry.jpg in Resources */,
+				C56580A71901A8E100BE4244 /* feather.jpg in Resources */,
+				C56580A51901A8E100BE4244 /* john.jpg in Resources */,
 				C56580801901854F00BE4244 /* storm.jpg in Resources */,
 				C56580821901854F00BE4244 /* crimea.jpg in Resources */,
 				C56580871901854F00BE4244 /* pistorius.jpg in Resources */,
+				C56580A81901A8E100BE4244 /* james.jpg in Resources */,
 				C56580881901854F00BE4244 /* snowden.jpg in Resources */,
+				C56580AD1901A8FF00BE4244 /* mark.png in Resources */,
+				C56580A61901A8E100BE4244 /* tess.jpg in Resources */,
 				C56580851901854F00BE4244 /* healthcaregov.jpg in Resources */,
 				C56580841901854F00BE4244 /* flight.jpg in Resources */,
+				C56580AA1901A8E100BE4244 /* neil.jpg in Resources */,
 				C57030CC19015DCD001CF089 /* InfoPlist.strings in Resources */,
 				C56580831901854F00BE4244 /* fallon.jpg in Resources */,
 				C56580811901854F00BE4244 /* harlem.jpg in Resources */,
 				C57030D419015DCD001CF089 /* Images.xcassets in Resources */,
+				C56580A91901A8E100BE4244 /* eva.jpg in Resources */,
 				C56580861901854F00BE4244 /* mvp.jpg in Resources */,
 				C565807F1901854F00BE4244 /* obama.jpg in Resources */,
 				C565807E1901854F00BE4244 /* goodnight.png in Resources */,
